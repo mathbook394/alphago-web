@@ -11,14 +11,17 @@
         body {
             font-family: 'Noto Sans KR', sans-serif;
         }
+        main {
+            margin-top: 4rem;
+        }
         .section {
-            margin-bottom: 8rem;
-            margin: 0 150px; 
+            margin-bottom: 0rem;
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 1rem;
+            grid-template-columns: repeat(1, 1fr); /* 한 줄에 하나의 항목만 표시 */
+            gap: 1rem; /* 항목 간 간격 */
+            justify-content: center; /* 중앙 정렬 */
         }
         .grid-item {
             position: relative;
@@ -55,8 +58,61 @@
             </nav>
         </div>
     </header>
-
-
+    <main class="flex flex-col items-center justify-center py-2">
+        <h1 class="text-4xl font-bold mb-8">Upcoming Events</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl">
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden" data-v0-t="card">
+                <img
+                    src="/photo/events1.jpg"
+                    alt="Event 1"
+                    class="w-full h-64 object-cover"
+                    width="300"
+                    height="200"
+                    style="aspect-ratio: 300 / 200; object-fit: cover;"
+                />
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">알파고 면접</h2>
+                    <p class="text-gray-500">This is a short description for Event 1.</p>
+                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 mt-4">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden" data-v0-t="card">
+                <img
+                    src="/photo/events2.jpg"
+                    alt="Event 2"
+                    class="w-full h-64 object-cover"
+                    width="300"
+                    height="200"
+                    style="aspect-ratio: 300 / 200; object-fit: cover;"
+                />
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">과학의 날</h2>
+                    <p class="text-gray-500">This is a short description for Event 2.</p>
+                    <button class="inline-flex items-cenjustify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 mt-4">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden" data-v0-t="card">
+                <img
+                    src="/photo/events3.jpg"
+                    alt="Event 3"
+                    class="w-full h-64 object-cover"
+                    width="300"
+                    height="200"
+                    style="aspect-ratio: 300 / 200; object-fit: cover;"
+                />
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">은행제</h2>
+                    <p class="text-gray-500">This is a short description for Event 3.</p>
+                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 mt-4">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
         <!-- Footer -->
         <footer class="text-center text-sm text-gray-600 mt-8">
             © 2024 알파고, All rights reserved.
@@ -66,5 +122,6 @@
                 <a href="#" class="text-blue-500">10922@wooshin.sen.hs.kr</a>
             </div>
         </footer>
+    </main>
 </body>
 </html>
