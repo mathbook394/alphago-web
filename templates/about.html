@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hover-scale-click {
+            transition: all 0.5s ease-in-out;
+        }
+
+        .hover-scale-click:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <title>Your Website</title>
+</head>
+    <body class="bg-white">
+        <header class="bg-blue-400 text-white p-6">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="/photo/wooshinlogo.png" alt="Wooshin Logo" class="w-10 h-10 mt-1">
+                    <a href="/" class="text-3xl font-bold ml-2">알파고</a>
+                </div>
+                <nav>
+                    <ul class="flex space-x-4">
+                        <li><a href="/about" class="hover:text-gray-200">About</a></li>
+                        <li><a href="/events" class="hover:text-gray-200">Events</a></li>
+                        <li><a href="/gallery" class="hover:text-gray-200">Gallery</a></li>
+                        <li><a href="https://github.com/" class="hover:text-gray-200">Github</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <main class="container mx-auto p-6">
+        <div class="text-center bg-blue-100 p-6 rounded-lg hover-scale-click">
+            <h2 class="text-4xl font-bold mb-4 text-blue-400">About Us</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <img
+                    src="/photo/about1.JPG"
+                    alt="About Us"
+                    class="w-full h-64 object-cover rounded-lg shadow-lg"
+                    width="200"
+                    height="200"
+                    style="aspect-ratio: 1 / 1; object-fit: cover;"
+                />
+                <img
+                    src="/photo/about2.jpg"
+                    alt="About Us"
+                    class="w-full h-64 object-cover rounded-lg shadow-lg"
+                    width="200"
+                    height="200"
+                    style="aspect-ratio: 1 / 1; object-fit: cover;"
+                />
+                <img
+                    src="/photo/about3.jpg"
+                    alt="About Us"
+                    class="w-full h-64 object-cover rounded-lg shadow-lg"
+                    width="200"
+                    height="200"
+                    style="aspect-ratio: 1 / 1; object-fit: cover;"
+                />
+            </div>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg">
+            <p class="text-gray-700 text-lg mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, mauris nec fermentum ornare,
+                nulla turpis dapibus mi, in placerat ipsum diam in est. Sed vel nisl et dolor laoreet consectetur eget
+                id enim.
+            </p>
+            <p class="text-gray-700 text-lg mb-4">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sit amet
+                eros in felis scelerisque scelerisque. Etiam sit amet libero volutpat, vehicula risus nec, interdum
+                tellus.
+            </p>
+            <p class="text-gray-700 text-lg">
+                In hac habitasse platea dictumst. Sed ut pulvinar quam. Nulla pharetra faucibus neque, non commodo
+                erat eleifend ut. Nulla facilisi. Nulla facilisi. Morbi rutrum interdum tellus, at feugiat mi pulvinar
+                at.
+            </p>
+        </div>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-blue-400 p-6 rounded-lg hover-scale-click">
+                <h3 class="text-2xl font-bold text-white mb-4">Our Mission</h3>
+                <p class="text-white text-lg">
+                    To provide the best services and create a positive impact in the world. We believe in the power of
+                    technology and innovation to transform lives.
+                </p>
+            </div>
+            <div class="bg-blue-400 p-6 rounded-lg hover-scale-click">
+                <h3 class="text-2xl font-bold text-white mb-4">Our Vision</h3>
+                <p class="text-white text-lg">
+                    To be a leading company in the tech industry, recognized for our commitment to innovation, quality,
+                    and customer satisfaction.
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+ <!-- Footer -->
+ <footer class="text-center text-sm text-gray-600 mt-8">
+    © 2024 알파고, All rights reserved.
+    <div class="flex justify-center space-x-4">
+        <a href="https://github.com/" class="text-blue-500">github</a>
+        <a href="https://wooshin.sen.hs.kr/" class="text-blue-500">우신고등학교</a>
+        <a href="#" class="text-blue-500">10922@wooshin.sen.hs.kr</a>
+    </div>
+</footer>
+</html>
