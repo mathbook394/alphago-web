@@ -29,7 +29,11 @@ def gallery2(k):
 
 @application.route("/events",methods=["GET"])
 def events():
-    return render_template("events.html")
+    user_agent = request.user_agent.string
+    if "Mobi" in user_agent:
+        return render_template("events(mbi).html")
+    else:
+        return render_template("events.html")
 
 @application.route("/events1",methods=["GET"])
 def events1():
@@ -44,5 +48,4 @@ def events3():
     return render_template("events3.html")
 
 if __name__ == "__main__":
-    application.debug = True
     application.run()
