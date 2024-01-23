@@ -13,7 +13,11 @@ def main():
 
 @application.route("/about", methods=["GET"])
 def about():
-    return render_template("about.html")
+    user_agent = request.user_agent.string
+    if "Mobi" in user_agent:
+        return render_template("about(mbi).html")
+    else:
+        return render_template("about.html")
 
 @application.route("/gallery",methods=["GET"])
 def gallery():
