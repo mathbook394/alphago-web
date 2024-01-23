@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        main {
+            margin-top: 4rem;
+        }
+        .section {
+            margin-bottom: 0rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* 한 줄에 하나의 항목만 표시 */
+            gap: 1rem; /* 항목 간 간격 */
+            justify-content: center; /* 중앙 정렬 */
+        }
+        .grid-item {
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            height: 200px;
+        }
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .grid-item:hover {
+            transform: scale(1.2);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="bg-blue-400 text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="/photo/wooshinlogo.png" alt="Wooshin Logo" class="w-10 h-10 mt-1">
+                <a href="/" class="text-3xl font-bold ml-2">알파고</a>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="/about" class="hover:text-gray-200">About</a></li>
+                    <li><a href="/events" class="hover:text-gray-200">Events</a></li>
+                    <li><a href="/gallery" class="hover:text-gray-200">Gallery</a></li>
+                    <li><a href="https://github.com/" class="hover:text-gray-200">Github</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="flex flex-col items-center justify-center py-2">
+        <h1 class="text-4xl font-bold mb-8">Upcoming Events</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl">
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden" data-v0-t="card">
+                <img
+                    src="/photo/events1.jpg"
+                    alt="Event 1"
+                    class="w-full h-64 object-cover"
+                    width="300"
+                    height="200"
+                    style="aspect-ratio: 300 / 200; object-fit: cover;"
+                />
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">알파고 면접</h2>
+                    <p class="text-gray-500">This is a short description for Event 1.</p>
+                    <a href="/events1" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 mt-4">
+                        더 알아보기
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden" data-v0-t="card">
+                <img
+                    src="/photo/events2.jpg"
+                    alt="Event 2"
+                    class="w-full h-64 object-cover"
+                    width="300"
+                    height="200"
+                    style="aspect-ratio: 300 / 200; object-fit: cover;"
+                />
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">과학의 날</h2>
+                    <p class="text-gray-500">This is a short description for Event 2.</p>
+                    <a href="/events2" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 mt-4">
+                        더 알아보기
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden" data-v0-t="card">
+                <img
+                    src="/photo/events3.jpg"
+                    alt="Event 3"
+                    class="w-full h-64 object-cover"
+                    width="300"
+                    height="200"
+                    style="aspect-ratio: 300 / 200; object-fit: cover;"
+                />
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">은행제</h2>
+                    <p class="text-gray-500">This is a short description for Event 3.</p>
+                    <a href="/events3" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 mt-4">
+                        더 알아보기
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-sm text-gray-600 mt-8">
+            © 2024 알파고, All rights reserved.
+            <div class="flex justify-center space-x-4">
+                <a href="https://github.com/" class="text-blue-500">github</a>
+                <a href="https://wooshin.sen.hs.kr/" class="text-blue-500">우신고등학교</a>
+                <a href="#" class="text-blue-500">10922@wooshin.sen.hs.kr</a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
