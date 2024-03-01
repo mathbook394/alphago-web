@@ -48,4 +48,4 @@ def events3():
     return render_template("events3.html")
 
 if __name__ == "__main__":
-    application.run()
+    application.run(host='0.0.0.0', port=5000, ssl_context=('path/to/cert.pem', 'path/to/key.pem'))
